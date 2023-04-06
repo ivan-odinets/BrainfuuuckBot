@@ -1,0 +1,3 @@
+debian/brainfuuuck-bot.conf             etc/bots/telegram
+bin/brainfuuuck-bot                     usr/bin
+debian/brainfuuuck-bot.service          lib/systemd/system

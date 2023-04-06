@@ -1,0 +1,4 @@
+etc/bots/telegram
+usr/bin
+var/lib/bots/telegram/brainfuuuck-bot
+var/log/bots/telegram/brainfuuuck-bot

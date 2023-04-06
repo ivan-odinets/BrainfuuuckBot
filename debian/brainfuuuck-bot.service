@@ -1,0 +1,19 @@
+[Unit]
+Description=BrainfuuuckBot for Telegram
+After=network.target
+
+[Service]
+User=brainfuuuck-bot
+ExecStart=/usr/bin/brainfuuuck-bot -c /etc/bots/telegram/brainfuuuck-bot.conf
+StandardOutput=file:/var/log/bots/telegram/brainfuuuck-bot/output.log
+StandardError=file:/var/log/bots/telegram/brainfuuuck-bot/error.log
+
+ProtectSystem=yes
+NoNewPrivileges=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+RestrictNamespaces=yes
+
+[Install]
+WantedBy=multi-user.target
